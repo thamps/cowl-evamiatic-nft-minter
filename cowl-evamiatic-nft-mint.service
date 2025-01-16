@@ -1,0 +1,17 @@
+[Unit]
+Description=COWL Evamiatic NFT Minter Service
+After=network.target
+
+[Service]
+Type=simple
+User=aristocrat
+WorkingDirectory=/opt/cowl-evamiatic-nft
+ExecStart=/usr/bin/python3 /opt/cowl-evamiatic-nft/reward-delegation-nft.py
+Restart=always
+RestartSec=10
+
+# Environment variables if needed
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
