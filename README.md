@@ -1,4 +1,4 @@
-# COWL NFT Minting Service
+# COWL Evamiatic NFT Minting Service
 
 This service automatically mints NFTs for Casper Network delegators using DALL-E generated images and IPFS storage.
 
